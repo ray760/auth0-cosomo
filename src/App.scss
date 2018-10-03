@@ -1,0 +1,29 @@
+@import 'styles/fonts.scss';
+@import 'styles/vendors.scss';
+
+$bg: #D3CECB;
+$text: #353535;
+$headerText: #EB5424;
+
+body {
+  font-family: 'Questrial', sans-serif;
+}
+
+nav {
+
+  .brand-logo {
+    color: $headerText;
+    font-weight: 700;
+  }
+
+  li>a {
+    color: $text !important;
+  }
+
+}
+
+.intro {
+
+  margin-top: 3rem;
+
+}
