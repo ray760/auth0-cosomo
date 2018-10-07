@@ -4,12 +4,24 @@
 $bg: #D3CECB;
 $text: #353535;
 $headerText: #EB5424;
-
+.material-icons{ color: olive; }
 body {
   font-family: 'Questrial', sans-serif;
 }
 
+.impact-text {
+  color: $headerText;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
 nav {
+
+  border-bottom: 1px solid #f1f1f1;
+  box-shadow: none;
+  margin-bottom: 3rem;
 
   .brand-logo {
     color: $headerText;
@@ -22,8 +34,28 @@ nav {
 
 }
 
+.sidebar {
+  margin-top: .2rem;
+  li {
+    margin-bottom: 1rem;
+
+    a {
+      color: $text;
+      cursor: pointer;
+
+      &:hover {
+        color: $headerText;
+      }
+    }
+  }
+
+  i {
+    margin-right: 4px;
+  }
+}
+
 .intro {
-
-  margin-top: 3rem;
-
+  h1 {
+    margin-top: 0;
+  }
 }

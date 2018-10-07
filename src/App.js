@@ -4,15 +4,26 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Intro from './components/Intro';
 import AboutMe from './components/AboutMe';
+import SideBar from './components/SideBar';
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="App">
+        <div className="App container">
           <Navbar />
-          <Route exact path='/' component={Intro} />
-          <Route path='/about' component={AboutMe} />
+          <div className="row">
+            <div className="col l2 hide-on-med-and-down">
+              <SideBar />
+            </div>
+
+            <div className="col l10">
+              <Route exact path='/' component={Intro} />
+              <Route path='/about' component={AboutMe} />
+            </div>
+          </div>
+
+
         </div>
       </BrowserRouter>
     );
