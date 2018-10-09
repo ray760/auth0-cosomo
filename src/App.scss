@@ -4,7 +4,7 @@
 $bg: #D3CECB;
 $text: #353535;
 $headerText: #EB5424;
-.material-icons{ color: olive; }
+.material-icons{ color: $headerText; }
 body {
   font-family: 'Questrial', sans-serif;
 }

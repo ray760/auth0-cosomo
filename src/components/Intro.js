@@ -16,7 +16,7 @@ const Intro = () => {
 
       <Heading size={2}>
         About This Page
-        <div class="divider"></div>
+        <div className="divider"></div>
       </Heading>
             
       <Paragraph>

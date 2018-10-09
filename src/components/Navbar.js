@@ -1,38 +1,72 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import { Link, Tooltip } from '@auth0/cosmos';
+import M from '../../node_modules/materialize-css/dist/js/materialize';
 
-const Navbar = () => {
-  return(
-    <div>
-      <nav className="nav-wrapper transparent black-text">
-        <div className="row">
-          <div className="col l6">
-            <a className="brand-logo">&#x0003C;RAYFOLIO /&#x0003E;</a>
-            <a href="#" class="sidebar-trigger" data-target="mobile-links">
-              <i className="material-icons">menu</i>
-            </a>
+class Navbar extends Component {
+  componentDidMount() {
+    var elem = document.querySelector('.sidenav');
+    var instance = M.Sidenav.getInstance(elem);
+    M.Sidenav.init(elem, {});
+  }
+
+  render(){
+    return(
+      <div>
+        <nav className="nav-wrapper transparent black-text">
+          <div className="row">
+            <div className="col l6">
+              <a className="brand-logo">&#x0003C;RAYFOLIO /&#x0003E;</a>
+              <a className="sidenav-trigger" data-target="mobile-links">
+                <a href="#!" className="material-icons">menu</a>
+              </a>
+            </div>
+
+            <div className="col l6">
+              <ul className="right hide-on-med-and-down">
+                <li><NavLink to='/'>Intro</NavLink></li>
+                <li><NavLink to='/about'>About Me</NavLink></li>
+                <li><NavLink to='/about-you'>About You</NavLink></li>
+              </ul>
+            </div>
+
           </div>
+        </nav>
 
-          <div className="col l6">
-            <ul className="right hide-on-med-and-down">
-              <li><NavLink to='/'>Intro</NavLink></li>
-              <li><NavLink to='/about'>About Me</NavLink></li>
-              <li><NavLink to='/about-you'>About You</NavLink></li>
-            </ul>
-          </div>
+        <ul className="sidenav" id="mobile-links">
+          <li><NavLink to='/' className="sidenav-close">Intro</NavLink></li>
+          <li><NavLink to='/about' className="sidenav-close">About Me</NavLink></li>
+          <li><NavLink to='/about-you' className="sidenav-close">About You</NavLink></li>
+          <div className="divider"></div>
+          <li>
+            <Link href="https://github.com/ray760?tab=repositories">
+              <i className="fa fa-github" aria-hidden="true"></i>
+                GitHub
+            </Link>
+          </li>
+          <li>
+            <Link href="https://www.linkedin.com/in/rayarobertson">
+              <i className="fa fa-linkedin" aria-hidden="true"></i>
+                Likedin Profile
+            </Link>
+          </li>
+          <li>
+            <Link href="http://www.rayfolio.com/auth0/docs/Ray-Robertson-Resume-2018.pdf">
+              <i className="fa fa-file-pdf-o" aria-hidden="true"></i>
+                My Resume
+            </Link>
+          </li>
+          <li>
+            <Link href="mailto:ray760@yahoo.com?Subject=Auth0%20UI%20Engineer">
+              <i className="fa fa-envelope-o" aria-hidden="true"></i>
+              Email Me
+            </Link>
+          </li>               
+        </ul>
 
-        </div>
-      </nav>
-
-      <ul class="sidenav" id="mobile-links">
-        <li><NavLink to='/'>Intro</NavLink></li>
-        <li><NavLink to='/about'>About Me</NavLink></li>
-        <li><NavLink to='/about-you'>About You</NavLink></li>
-        <div className="divider"></div>        
-      </ul>
-
-    </div>
-  )
+      </div>
+    )
+  }
 }
 
 export default Navbar;
