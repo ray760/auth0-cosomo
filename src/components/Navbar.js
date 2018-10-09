@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Link, Tooltip } from '@auth0/cosmos';
+import { Link } from '@auth0/cosmos';
 import M from '../../node_modules/materialize-css/dist/js/materialize';
 
 class Navbar extends Component {
   componentDidMount() {
     var elem = document.querySelector('.sidenav');
-    var instance = M.Sidenav.getInstance(elem);
     M.Sidenav.init(elem, {});
   }
 
