@@ -3,7 +3,7 @@ import { Heading, Link, Paragraph } from '@auth0/cosmos';
 
 const LetsChat = () => {
   return(
-    <div className="about">
+    <div className="chat">
       <div>
         <Heading size={1}>
           Can We Chat?

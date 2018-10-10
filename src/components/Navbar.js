@@ -5,8 +5,7 @@ import { Link } from '@auth0/cosmos';
 
 class Navbar extends Component {
   componentDidMount() {
-    console.log('WHO GOT THE PROPS: ', this.props.M);
-    var elem = document.querySelector('.sidenav');
+    const elem = document.querySelector('.sidenav');
     this.props.M.Sidenav.init(elem, {});
   }
 
@@ -26,7 +25,7 @@ class Navbar extends Component {
               <ul className="right hide-on-med-and-down">
                 <li><NavLink to='/'>Intro</NavLink></li>
                 <li><NavLink to='/about'>About Me</NavLink></li>
-                <li><NavLink to='/about-you'>Let's Chat</NavLink></li>
+                <li><NavLink to='/lets-chat'>Let's Chat</NavLink></li>
               </ul>
             </div>
 
@@ -36,7 +35,7 @@ class Navbar extends Component {
         <ul className="sidenav" id="mobile-links">
           <li><NavLink to='/' className="sidenav-close">Intro</NavLink></li>
           <li><NavLink to='/about' className="sidenav-close">About Me</NavLink></li>
-          <li><NavLink to='/about-you' className="sidenav-close">Let's Chat</NavLink></li>
+          <li><NavLink to='/lets-chat' className="sidenav-close">Let's Chat</NavLink></li>
           <div className="divider"></div>
           <li>
             <Link href="https://github.com/ray760?tab=repositories">

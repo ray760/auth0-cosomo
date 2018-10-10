@@ -21,8 +21,9 @@ class App extends Component {
 
             <div className="col s12 m12 l10">
               <Route exact path='/' component={Intro} />
-              <Route path='/about' component={AboutMe} />
-              <Route path='/lets-chat' component={LetsChat} />
+              <Route path='/about' render={(props) => <AboutMe M={M} />} />
+              <Route path='/lets-chat'  component={LetsChat} />
+              {/* render={(props) => <Dashboard {...props} isAuthed={true} />} */}
             </div>
           </div>
 
