@@ -36,7 +36,7 @@ class Navbar extends Component {
         <ul className="sidenav" id="mobile-links">
           <li><NavLink to='/' className="sidenav-close">Intro</NavLink></li>
           <li><NavLink to='/about' className="sidenav-close">About Me</NavLink></li>
-          <li><NavLink to='/about-you' className="sidenav-close">About You</NavLink></li>
+          <li><NavLink to='/about-you' className="sidenav-close">Let's Chat</NavLink></li>
           <div className="divider"></div>
           <li>
             <Link href="https://github.com/ray760?tab=repositories">
