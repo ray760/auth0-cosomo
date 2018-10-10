@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Intro from './components/Intro';
 import AboutMe from './components/AboutMe';
 import SideBar from './components/SideBar';
+import LetsChat from './components/LetsChat';
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
             <div className="col s12 m12 l10">
               <Route exact path='/' component={Intro} />
               <Route path='/about' component={AboutMe} />
+              <Route path='/lets-chat' component={LetsChat} />
             </div>
           </div>
 

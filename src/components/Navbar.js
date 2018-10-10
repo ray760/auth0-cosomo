@@ -26,7 +26,7 @@ class Navbar extends Component {
               <ul className="right hide-on-med-and-down">
                 <li><NavLink to='/'>Intro</NavLink></li>
                 <li><NavLink to='/about'>About Me</NavLink></li>
-                <li><NavLink to='/about-you'>About You</NavLink></li>
+                <li><NavLink to='/about-you'>Let's Chat</NavLink></li>
               </ul>
             </div>
 
