@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Link } from '@auth0/cosmos';
-/* import M from '../../node_modules/materialize-css/dist/js/materialize'; */
 
 class Navbar extends Component {
   componentDidMount() {
@@ -15,7 +14,7 @@ class Navbar extends Component {
         <nav className="nav-wrapper transparent black-text">
           <div className="row">
             <div className="col l6">
-              <a className="brand-logo">&#x0003C;RAYFOLIO /&#x0003E;</a>
+              <a href="#" className="brand-logo">&#x0003C;RAYFOLIO /&#x0003E;</a>
               <a href="#!" className="sidenav-trigger" data-target="mobile-links">
                 <i className="material-icons">menu</i>
               </a>

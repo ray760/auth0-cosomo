@@ -17,11 +17,20 @@ body {
   font-weight: bold;
 }
 
+#modal1 {
+  transform: translateY(-50%) !important;
+}
+
 nav {
 
   border-bottom: 1px solid #f1f1f1;
   box-shadow: none;
   margin-bottom: 3rem;
+
+  li > a:hover {
+    background-color: transparent !important;
+    color: $headerText !important;
+  }
 
   .brand-logo {
     color: $headerText;

@@ -5,7 +5,6 @@ const Intro = () => {
   return(
     <div className="intro">
 
-
       <Heading size={1}>Hi, I'm <span className="impact-text">Ray Robertson</span></Heading>
 
       <Alert type="information" icon="megaphone" title="FYI!" dismissible={false}>This is an important message! I want to join the <span className="bold-text">Auth0</span> team.</Alert>

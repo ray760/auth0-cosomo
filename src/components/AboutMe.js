@@ -3,12 +3,23 @@ import { Heading, Link, Paragraph } from '@auth0/cosmos';
 
 class AboutMe extends Component {
 
-  componentDidMount() {
-    var elems = document.querySelectorAll('.modal');
-    this.props.M.Modal.init(elems, {'startingTop': '50%'});
-    //this.props.M.Sidenav.init(elem, {});
+  state = {
+    adUrl: null,
+    vidId: null,
+    vidName: null
   }
 
+  componentDidMount() {
+    var elem = document.querySelector('.modal');
+    this.props.M.Modal.init(elem, {
+      endingTop: '50%',
+      onOpenStart() {
+        console.log(elem)
+      }
+    });
+
+  }
+  
   render() { 
     return(
       <div className="about">
@@ -45,11 +56,11 @@ class AboutMe extends Component {
           </Heading>
 
           <Paragraph>
-            Currently, I work for Trusted.com on a small team distributed throughout the U.S. We've updated the site with a new look, as well as features, with more updates to come in the backlog. We also spend time on a side project Cyberledger which is in development and getting feedback from potential clients.
+            Currently, I work for <Link href="https://www.trusted.com">Trusted.com</Link> on a small team distributed throughout the U.S. We've updated the site with a new look, as well as features, with more updates to come in the backlog. We also spend time on a side project <Link href="http://www.cyberledger.com">Cyberledger</Link> which is in development and getting feedback from potential clients.
           </Paragraph>
 
           <Paragraph>
-            Trusted is a great place to work. We communicate wellvia Slack being a distributed team, I got the opportunity to learn some Kendo UI which I never touched prior, and I get to avoid the tough DMV (D.C, Maryland, Virginia) commutes. But like most folks, I always seek more. Not necessarily stuff or money, but to learn more, grow career-wise and be part of something that is making a huge impact in its space.
+            Trusted is a great place to work. We communicate well via Slack being a distributed team, I got the opportunity to learn some Kendo UI which I never touched prior, and I get to avoid the tough DMV (D.C, Maryland, Virginia) commutes. But like most folks, I always seek more. Not necessarily stuff or money, but to learn more, grow career-wise and be part of something that is making a huge impact in its space.
           </Paragraph>
         </div>
       </div>
