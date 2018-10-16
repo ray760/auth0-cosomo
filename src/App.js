@@ -11,7 +11,7 @@ import LetsChat from './components/LetsChat';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename="/auth0">
         <div className="App container">
           <Navbar M={M} />
           <div className="row">

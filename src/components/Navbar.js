@@ -14,7 +14,7 @@ class Navbar extends Component {
         <nav className="nav-wrapper transparent black-text">
           <div className="row">
             <div className="col l6">
-              <a href="#" className="brand-logo">&#x0003C;RAYFOLIO /&#x0003E;</a>
+              <Link href="/" className="brand-logo">&#x0003C;RAYFOLIO /&#x0003E;</Link>
               <a href="#!" className="sidenav-trigger" data-target="mobile-links">
                 <i className="material-icons">menu</i>
               </a>
@@ -37,19 +37,19 @@ class Navbar extends Component {
           <li><NavLink to='/lets-chat' className="sidenav-close">Let's Chat</NavLink></li>
           <div className="divider"></div>
           <li>
-            <Link href="https://github.com/ray760?tab=repositories">
+            <Link href="https://github.com/ray760?tab=repositories" target="_blank">
               <i className="fa fa-github" aria-hidden="true"></i>
                 GitHub
             </Link>
           </li>
           <li>
-            <Link href="https://www.linkedin.com/in/rayarobertson">
+            <Link href="https://www.linkedin.com/in/rayarobertson" target="_blank">
               <i className="fa fa-linkedin" aria-hidden="true"></i>
                 Likedin Profile
             </Link>
           </li>
           <li>
-            <Link href="http://www.rayfolio.com/auth0/docs/Ray-Robertson-Resume-2018.pdf">
+            <Link href="http://www.rayfolio.com/auth0/docs/Ray-Robertson-Resume-2018.pdf" target="_blank">
               <i className="fa fa-file-pdf-o" aria-hidden="true"></i>
                 My Resume
             </Link>

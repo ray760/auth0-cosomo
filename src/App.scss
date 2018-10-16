@@ -17,7 +17,14 @@ body {
   font-weight: bold;
 }
 
+/* .brand-logo {
+  &:hover {
+    color: $headerText !important;
+  }
+} */
+
 #modal1 {
+  overflow: hidden;
   transform: translateY(-50%) !important;
 }
 
@@ -34,7 +41,11 @@ nav {
 
   .brand-logo {
     color: $headerText;
+    font-size: 2rem;
     font-weight: 700;
+    &:hover {
+      color: $headerText !important;
+    }
   }
 
   li>a {
@@ -78,4 +89,25 @@ nav {
   h2 {
     margin-bottom: .15em;
   }
+
+  a.modal-close {
+    margin-right: 32px;
+  }
+}
+
+.responsive-ytv {
+  display: block;
+  height: 0;
+  margin: 20px;
+  overflow: hidden;
+  padding-bottom: 55.56%;
+  position: relative;
+}
+
+#ytplayer {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }

@@ -5,19 +5,19 @@ const SideBar = () => {
   return(
     <ul className="sidebar">
       <li>
-        <Link href="https://github.com/ray760?tab=repositories">
+        <Link href="https://github.com/ray760?tab=repositories" target="_blank">
           <i className="fa fa-github" aria-hidden="true"></i>
           GitHub
         </Link>
       </li>
       <li>
-        <Link href="https://www.linkedin.com/in/rayarobertson">
+        <Link href="https://www.linkedin.com/in/rayarobertson" target="_blank">
           <i className="fa fa-linkedin" aria-hidden="true"></i>
           Likedin Profile
         </Link>
       </li>
       <li>
-        <Link href="http://www.rayfolio.com/auth0/docs/Ray-Robertson-Resume-2018.pdf">
+        <Link href="http://www.rayfolio.com/auth0/docs/Ray-Robertson-Resume-2018.pdf" target="_blank">
           <i className="fa fa-file-pdf-o" aria-hidden="true"></i>
           My Resume
         </Link>
